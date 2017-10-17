@@ -1,0 +1,8 @@
+{
+  "generator-simple-droid-plate": {
+    "promptValues": {
+      "app_name": "PasswordlessLogin",
+      "app_package": "com.udacity.toelie.passwordlesslogin"
+    }
+  }
+}

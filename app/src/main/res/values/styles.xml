@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppLoginTheme" parent="Theme.AccountKit">
+        <item name="com_accountkit_background_color">@color/ak_background</item>
+        <item name="com_accountkit_text_color">@color/ak_text</item>
+        <item name="com_accountkit_button_background_color">@color/ak_buttonBackground</item>
+        <item name="com_accountkit_button_pressed_background_color">@color/ak_buttonPressedBackground</item>
+        <item name="com_accountkit_button_text_color">@color/ak_buttonText</item>
+        <item name="com_accountkit_input_background_color">@color/ak_inputBackground</item>
+        <item name="com_accountkit_input_text_color">@color/ak_inputText</item>
+        <item name="com_accountkit_status_bar_color">@color/ak_statusBar</item>
+        <item name="com_accountkit_icon_color">@color/ak_icon</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+
+    <!-- Exists for inheritance purposes -->
+    <style name="PasswordlessLogin" parent="PasswordlessLogin.Base" />
+
+    <style name="PasswordlessLogin.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/theme_primary</item>
+        <item name="colorPrimaryDark">@color/theme_primary_dark</item>
+        <item name="colorAccent">@color/theme_accent</item>
+    </style>
+
+    <style name="PasswordlessLogin.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="PasswordlessLogin.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!-- Activity styles -->
+    <style name="PasswordlessLogin.Template"/>
+
+    <!-- Button styles -->
+    <style name="Widget.PasswordlessLogin.Button.Base" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/app_white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+    </style>
+
+    <!--<style name="AppLoginTheme" parent="Theme.AccountKit"/>-->
+
+</resources>
