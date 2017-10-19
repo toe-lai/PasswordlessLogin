@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
@@ -14,6 +15,8 @@ import com.facebook.accountkit.AccountKitLoginResult;
 import com.facebook.accountkit.ui.AccountKitActivity;
 import com.facebook.accountkit.ui.AccountKitConfiguration;
 import com.facebook.accountkit.ui.LoginType;
+import com.facebook.accountkit.ui.SkinManager;
+import com.facebook.accountkit.ui.UIManager;
 import com.udacity.toelie.passwordlesslogin.R;
 import com.udacity.toelie.passwordlesslogin.ui.account.AccountActivity;
 import com.udacity.toelie.passwordlesslogin.util.FontHelper;
@@ -67,6 +70,11 @@ public class LoginActivity extends AppCompatActivity {
                         loginType,
                         AccountKitActivity.ResponseType.TOKEN
                 );
+
+        // custom UI
+        UIManager uiManager = new SkinManager(SkinManager.Skin.CONTEMPORARY, ContextCompat.getColor(this, R.color.md_red_500));
+
+        configurationBuilder.setUIManager(uiManager);
 
         final AccountKitConfiguration configuration = configurationBuilder.build();
 
